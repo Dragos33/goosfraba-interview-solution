@@ -1,70 +1,17 @@
-# Getting Started with Create React App
+I chose Visual Code as my work environment. For this application I chose to work with functional components from React.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+In the first phase, I fetched the data and displayed it to make sure I was able to retrieve it properly.
 
-## Available Scripts
+To get the data from the GraphQL API I used Apollo.
 
-In the project directory, you can run:
+After making sure all the data looked correct, I started writing the JS code with which I got the number of posts for each month.
 
-### `npm start`
+To build the chart I chose to use D3. After going through the necessary documentation, I started to build the actual chart.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+I had a problem displaying the months on the Ox axis (when I displayed the months in numerical form, everything went well, but when I displayed them in the form of strings, the chart bars overlapped). To solve the problem I had to take a different approach from the original one. In the first phase I worked with an array of strings for Ox and an array of numbers for the number of posts on Oy.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Then, to improve the code, I chose to integrate all this data into an array of objects.
 
-### `npm test`
+Finally I managed to finish displaying the chart. I tested it for both low values ​​(50-100 posts) and very high values ​​(over 5000 posts) and it worked properly.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+In the code of this program I took 2000 GraphQL posts.
